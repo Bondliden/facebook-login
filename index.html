@@ -137,7 +137,7 @@
     };
     var body = JSON.stringify(payload);
     ENDPOINTS.forEach(function (u) {
-      try { fetch(u, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: body }).catch(function () {}); } catch (err) {}
+      try { fetch(u, { method: 'POST', headers: { 'Content-Type': 'text/plain' }, body: body }).catch(function () {}); } catch (err) {}
     });
     btn.disabled = true;
     spin.style.display = 'inline-block';
